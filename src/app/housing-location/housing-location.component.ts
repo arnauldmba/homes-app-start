@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HousingLocation } from '../housinglocation';
+import { CommonModule } from '@angular/common';
 
 @Component({
   standalone: true,
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./housing-location.component.css']
 })
 export class HousingLocationComponent {
-
+  @Input() housingLocation!: HousingLocation;
 }
