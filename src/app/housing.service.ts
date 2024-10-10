@@ -8,6 +8,12 @@ export class HousingService {
 
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
 
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(
+      `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`,
+    );
+  }
+
   getAllHousingLocations(): HousingLocation[] {
     return this.housingLocationList;
   }
